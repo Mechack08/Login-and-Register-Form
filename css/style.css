@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap');
+
+*,::after,::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #1111F7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+}
+
+.form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    max-width: 430px;
+    width: 100%;
+    position: absolute;
+}
+.form.signup {
+    opacity: 0;
+    pointer-events: none;
+    transition: all .3s ease-out;
+}
+.forms.show-signup .form.signup {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.form .header {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    color: #222;
+    margin-bottom: 20px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.input-content {
+    position: relative;
+}
+.input-content input,
+button {
+    width: 100%;
+    height: 45px;
+    margin-bottom: 15px;
+    padding: 0 15px;
+    border: none;
+}
+.input-content input {
+    border: 1px solid #ccc;
+    outline: none;
+}
+.eye {
+    position: absolute;
+    top: 38%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #777;
+    cursor: pointer;
+}
+
+button {
+    margin-top: 15px;
+    background-color: #3333F7;
+    color: #fff;
+    font-size: 1.2rem;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: #3366F1;
+}
+
+.link-container,
+.forgotenpw {
+    display: block;
+    text-align: center;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #777;
+    margin-top: 15px;
+    position: relative;
+}
+.line::before {
+    content: 'Or';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    color: #777;
+    padding: 0 15px;
+}
+
+.social {
+    width: 100%;
+    height: 45px;
+    background-color: #1133F1;
+    margin-top: 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social.google {
+    background-color: transparent;
+    border: 1px solid #ccc;
+}
+.social.google span {
+    color: #777;
+}
+.social span {
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 1.1px;
+}
+.social .facebook-icon,
+.social.google img {
+    background-color: #fff;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+    color: #1133F1;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+
+.social img {
+    object-fit: cover;
+}
