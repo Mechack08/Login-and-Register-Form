@@ -59,10 +59,14 @@ button {
     margin-bottom: 15px;
     padding: 0 15px;
     border: none;
+    border-radius: 2px;
 }
 .input-content input {
     border: 1px solid #ccc;
     outline: none;
+}
+.input-content input:focus {
+    border-bottom: 3px solid #ccc;
 }
 .eye {
     position: absolute;
@@ -80,6 +84,7 @@ button {
     font-size: 1.2rem;
     letter-spacing: 1.2px;
     font-weight: 500;
+    cursor: pointer;
 }
 
 a {
@@ -120,6 +125,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    border-radius: 2px;
 }
 .social.google {
     background-color: transparent;
